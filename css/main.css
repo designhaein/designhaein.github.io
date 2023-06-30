@@ -1,46 +1,3 @@
-:root {
-    --light-yellow: #f7f6f2;
-    --main-yellow: #fcc41c;
-    --gray-color: #9ea1a4;
-    font-size: 16px;
-    --shadow-01: 0px 0px 2rem rgba(45,45,45,.1);
-}
-@media all and (max-width: 991px) {
-    :root {
-        font-size: 14px;
-    }
-}
-@media all and (min-width: 2560px) {
-    :root {
-        font-size: 20px;
-    }
-}
-a {
-    text-decoration: none;
-}
-
-@font-face {
-    font-family: "Snell"; /* 사용하고 싶은 font-family명을 지정 */
-    src: url("../assets/SnellBT-Bold.otf") format("opentype"); /* 폰트파일 불러오기 */
-}
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
-
-* {
-    box-sizing: border-box;
-}
-body {
-    display: block;
-    width: 100%;
-    overflow-x: hidden;
-    font-family: 'Pretendard';
-    font-weight: 300;
-}
-.imgWrap img {
-    display: block;
-    width: 100%;
-    object-fit: cover;
-}
-
 main {
     font-size: 1rem;
     width: 100vw; height: 100vh;
@@ -176,11 +133,7 @@ main::-webkit-scrollbar {
     width: 100%;
     border-radius: 20px;
     background-color: #fcc41c;
-}
-#about .rightBox .list.skills .imgWrap:after {
-    content: '';
-    display: block;
-    padding-bottom: 100%;
+    overflow: hidden;
 }
 #about .rightBox .list.skills .subCont {
     display: inline-block;

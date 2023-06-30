@@ -1,0 +1,56 @@
+:root {
+    --light-yellow: #f7f6f2;
+    --main-yellow: #fcc41c;
+    --gray-color: #9ea1a4;
+    font-size: 16px;
+    --shadow-01: 0px 0px 2rem rgba(45,45,45,.1);
+}
+@media all and (max-width: 991px) {
+    :root {
+        font-size: 14px;
+    }
+}
+@media all and (min-width: 2560px) {
+    :root {
+        font-size: 20px;
+    }
+}
+
+@font-face {
+    font-family: "Snell"; /* 사용하고 싶은 font-family명을 지정 */
+    src: url("../assets/SnellBT-Bold.otf") format("opentype"); /* 폰트파일 불러오기 */
+}
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
+
+
+* {
+    font-family: 'Pretendard-Regular';
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: unset;
+    font-family: 'Pretendard-Regular';
+}
+li, ul {
+    padding: 0; margin: 0;
+}
+.back {
+    display: block;
+    min-width: 32px; min-height: 32px;
+}
+
+body {
+    display: block;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Pretendard';
+    font-weight: 300;
+}
+.imgWrap {
+    object-fit: cover;
+}
+.imgWrap img {
+    display: block;
+    width: 100%;
+}
