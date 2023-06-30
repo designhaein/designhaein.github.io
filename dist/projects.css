@@ -1,0 +1,99 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
+
+
+
+* {
+    font-family: 'Pretendard-Regular';
+}
+a {
+    text-decoration: none;
+    color: unset;
+    font-family: 'Pretendard-Regular';
+}
+li, ul {
+    padding: 0; margin: 0;
+}
+.back {
+    display: block;
+    min-width: 32px; min-height: 32px;
+}
+header {
+    
+}
+.nav {
+    width: 100vw;
+    height: 50px;
+    background-color: rgba(255,255,255,0.5);
+    backdrop-filter: blur(4px);
+    border-bottom: 1px solid #ccc;
+}
+.nav_inner {
+    display: flex;
+    width: 100%; height: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 1280px;
+    margin: 0 auto;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.leftBtnArea {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#dropdownMenu li {
+    display: none;
+    font-weight: 200;
+}
+#dropdownMenu li:hover {
+    font-weight: bold;
+}
+#dropdownMenu li.on {
+    display: block;
+}
+.tabArea {
+    display: flex;
+    gap: 8px;
+}
+.tabArea a {
+    display: block;
+    font-size: 14px;
+    padding: 4px 8px;
+    color: #1a1a1a;
+    border: 1px solid #1a1a1a;
+    border-radius: 4px;
+    transition: .3s;
+}
+.tabArea a.on {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+.tabArea a:hover {
+    color: aqua;
+    border-color: aqua;
+    transition: .3s;
+}
+.tabArea a.on:hover {
+    color: #fff;
+    border-color: #1a1a1a;
+    transition: .3s;
+}
+.imgWrap {
+    display: inline-block;
+    position: relative;
+}
+.imgWrap img {
+    display: block;
+    position: relative;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+.box16 {
+    width: 16px;
+}
+.box32 {
+    width: 32px; height: 32px;
+}

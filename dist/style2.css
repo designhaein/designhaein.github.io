@@ -1,0 +1,250 @@
+:root {
+    --light-yellow: #f7f6f2;
+    --main-yellow: #fcc41c;
+    --gray-color: #9ea1a4;
+    font-size: 16px;
+    --shadow-01: 0px 0px 2rem rgba(45,45,45,.1);
+}
+@media all and (max-width: 991px) {
+    :root {
+        font-size: 14px;
+    }
+}
+@media all and (min-width: 2560px) {
+    :root {
+        font-size: 20px;
+    }
+}
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "Snell"; /* 사용하고 싶은 font-family명을 지정 */
+    src: url("../assets/SnellBT-Bold.otf") format("opentype"); /* 폰트파일 불러오기 */
+}
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
+
+* {
+    box-sizing: border-box;
+}
+body {
+    display: block;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Pretendard';
+    font-weight: 300;
+}
+.imgWrap img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+main {
+    font-size: 1rem;
+    width: 100vw; height: 100vh;
+    overflow: hidden;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+main::-webkit-scrollbar {
+    display: none;
+}
+#container > div {
+    height: 100vh;
+    width: 100vw;
+    background: var(--light-yellow);
+}
+.pg-wrapper {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.content {
+    position: relative;
+    line-height: 1.5em;
+    width: 100%; height: 100%;
+    min-width: 1280px;
+    padding: 0 10%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#open {
+    position: relative;
+    font-size: 2rem;
+    width: 100%; height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+#open h1 {
+    line-height: 1.2em;
+}
+#open h1:nth-child(1) {
+    position: absolute;
+    top: 0;left: 0;
+    text-align: left;
+
+    font-family: 'Gilda Display', serif;
+    font-weight: 400;
+    font-size: 4.4rem;
+    padding: .4em;
+    color: var(--gray-color);
+}
+#open h1:nth-child(2) {
+    position: absolute;
+    bottom: 0; right: 0;
+    text-align: left;
+
+    color: var(--main-yellow);
+    font-family: 'Snell';
+    font-size: 14rem;
+
+    transform: translate(.2em, -.02em);
+}
+
+
+.content h2.title {
+    text-align: left;
+    padding: .4em 0;
+
+    font-family: 'Gilda Display', serif;
+    font-weight: 400;
+    font-size: 4.4rem;
+
+    line-height: 1.2em;
+    color: var(--gray-color);
+}
+
+#about {}
+
+#about .aboutWrap {
+    display: flex;
+}
+#about .leftBox {
+    width: 50%;
+    border-right: 1px var(--gray-color) dashed;
+}
+#about .list {
+    padding: 2.2rem 0;
+}
+#about .list h3.title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-style: italic;
+
+    margin-bottom: 1.3rem;
+    color: var(--main-yellow);
+}
+#about .list .about_content {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    column-gap: 90px;
+    row-gap: 30px;
+}
+#about  .list .subTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--gray-color);
+    margin-right: 1.2rem;
+}
+#about  .list .subCont {
+    font-size: 1.2rem;
+    color: var(--gray-color);
+}
+
+#about .leftBox .list.career .subTitle {
+    font-size: 1rem;
+    font-weight: 200;}
+
+#about .rightBox {
+    padding-left: 6.25rem;
+    width: 50%;
+}
+#about .rightBox .list.skills .about_content {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 24px;
+}
+#about .rightBox .list.skills .imgWrap {
+    width: 100%;
+    border-radius: 20px;
+    background-color: #fcc41c;
+}
+#about .rightBox .list.skills .imgWrap:after {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+}
+#about .rightBox .list.skills .subCont {
+    display: inline-block;
+    width: 100%;
+    font-size: 0.8rem; 
+    text-align: center;
+}
+
+#about .rightBox .list.list.keywords .about_content {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+#about .rightBox .list.keywords .subCont {
+    display: block;
+    padding: 3px 20px;
+    border: 1px var(--gray-color) solid;
+    border-radius: 999px;
+}
+
+
+#project h2.title {
+    font-style: italic;
+    font-size: 5.4rem;
+}
+#project .projectWrap .categoryList {
+    width: fit-content;
+    padding: 2.4rem;
+    background-color: #fff;
+    border-radius: 1.6rem;
+    box-shadow: var(--shadow-01);
+}
+#project .projectWrap  > a {
+    display: block;
+    width: fit-content; height: 100%;
+}
+#project .projectWrap > a:hover h3,
+#project .projectWrap > a:hover span {
+    color: var(--main-yellow);
+}
+#project .projectWrap  > a.web {}
+#project .projectWrap  > a.brand {
+    position: relative;
+    transform: translate(40em, -3em);
+}
+#project .projectWrap  > a.other {
+    position: relative;
+    transform: translate(3em, -3em);
+}
+
+#project .projectWrap h3.subTitle {
+    display: block;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: var(--gray-color);
+}
+#project .projectWrap .subCont {
+    line-height: 1.4em;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: var(--gray-color);
+}
+
+#career {}
