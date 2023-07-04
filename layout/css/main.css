@@ -60,7 +60,7 @@ main::-webkit-scrollbar {
     font-family: 'Snell';
     font-size: 14rem;
 
-    transform: translate(.2em, -.02em);
+    transform: translate(0em, -.02em);
 }
 
 
