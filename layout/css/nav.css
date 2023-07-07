@@ -41,7 +41,7 @@ header {
     content: '';
     display: inline-block;
     width: 16px; height: 16px;
-    background-image: url('../assets/icons/triangle.svg');
+    background-image: url(/assets/icons/triangle.svg');
     background-position: center 6px;
     background-repeat: no-repeat;
     background-size: 10px;
