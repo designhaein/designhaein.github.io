@@ -1,29 +1,33 @@
 <nav class="nav">
     <div class="nav_inner">
+
         <div class="leftBtnArea">
             <div class="menuArea">
                 <ul id="dropdownMenu">
-                    <li id="menu_web" class="on"><span>web</span></li>
-                    <li id="menu_brand" class="">brand</li>
-                    <li id="menu_others">others</li>
+                    <li data-cate="web" id="menu_web" class=""><span>web</span></li>
+                    <li data-cate="brand" id="menu_brand" class=""><span>brand</span></li>
+                    <li data-cate="others" id="menu_others"><span>others</span></li>
                 </ul>
                 <ul id="openedMenu">
-                    <li class="on"><a href="../html/project-web-1.html">web</a></li>
-                    <li class=""><a href="../html/project-brand-1.html">brand</a></li>
+                    <li class=""><a href="../projects/project-web-1.html">web</a></li>
+                    <li class=""><a href="../projects/project-brand-1.html">brand</a></li>
                     <li class=""><a href="#">others</a></li>
                 </ul>
             </div>
-            <div class="tabArea">
-                <a id="tab_mod" class="on" href="../projects/project-brand-1.html">모드파티 & 모드라운지</a>
+            <div class="tabArea brand">
+                <a id="tab_mod" href="../projects/project-brand-1.html">모드파티 & 모드라운지</a>
                 <a id="tab_reporem" href="../projects/project-brand-2.html">리포렘</a>
             </div>
+            <div class="tabArea web">
+                <a id="tab_modweb" href="../projects/project-web-1.html">모드라운지</a>
+                <a id="tab_ccweb" href="../projects/project-web-2.html">클래시 커넥트</a>
+            </div>
         </div>
-        <div class="rightBenArea">
+        <div class="rightBtnArea">
             <div class="back imgWrap box32">
                 <a href="/#page-3"><img src="../assets/icons/ArrowUUpLeft.svg" alt="뒤로가기 버튼 아이콘"></a>
             </div>
         </div>
         
     </div>
-    
 </nav>
