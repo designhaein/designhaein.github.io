@@ -33,5 +33,7 @@ window.addEventListener('load', function() {
     addOn();
 
 })
+addOn();
+
 
 
