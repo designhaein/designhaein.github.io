@@ -4,7 +4,7 @@ window.addEventListener('load', function() {
     let openedMenu = document.querySelector('#openedMenu');
     let openMenuItems = document.querySelectorAll('#openedMenu li a');
 
-    (function addOn() {
+    function addOn() {
         let pageLocation = String(document.location).split('/'),
             fileName = pageLocation[pageLocation.length-1],
             fileDoc = pageLocation[pageLocation.length-2];
@@ -16,7 +16,7 @@ window.addEventListener('load', function() {
         $('.tabArea').find('a[href="../' + fileDoc + '/' + fileName + '"]').addClass('on');
         $('#dropdownMenu').find('li[id="menu_' + gg + '"]').addClass('on');
         $('.nav').find('div.' + gg).addClass('on');
-    }());
+    };
 
     function handleDropMenu(e) {
         openedMenu.classList.toggle('opened');
@@ -30,7 +30,7 @@ window.addEventListener('load', function() {
         })
     });
 
-
+    addOn();
 })
 
 
