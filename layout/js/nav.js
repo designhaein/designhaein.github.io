@@ -45,6 +45,7 @@ window.addEventListener('load', function() {
         }
 
         $(document).on('click', '#dropdownMenu li > span', handleDropMenu);
+        /*사파리에서 클릭 이벤트 정상 작동을 위한 코드 변경*/
     });
     
 
