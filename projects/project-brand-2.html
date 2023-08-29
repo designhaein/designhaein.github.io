@@ -16,8 +16,12 @@
     <link rel="stylesheet" href="../layout/css/nav.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../layout/js/importHTML.js"></script>
-    <script src="../layout/js/nav.js"></script>
+    <script>
+        $(function() {
+            $("#header").load("../layout/nav.html");
+        });
+    </script>
+    
 
     <link rel="stylesheet"  href="../projects/css/projects.css">
 
@@ -42,6 +46,7 @@
         </div>
     </main>
 
+    <script src="../layout/js/nav.js"></script>
     <script src="../layout/js/smooth-scroll.js"></script>
 </body>
 </html>
