@@ -1,8 +1,5 @@
-
 window.addEventListener('load', function() {
-	let dropdownMenu = document.querySelector('#dropdownMenu');
-    let items = document.querySelectorAll('#dropdownMenu li span');
-    let openedMenu = document.querySelector('#openedMenu');
+    let items = document.querySelectorAll('#dropdownMenu li > span');
     let openMenuItems = document.querySelectorAll('#openedMenu li a');
     let curUrl = document.location;
 
@@ -23,21 +20,35 @@ window.addEventListener('load', function() {
         if ($('#openedMenu').find('li > a[href*="' + gg + '"]').parent().length) {
             console.log('success');
         } else {
-            location.reload();
-        }
+            /*location.reload();*/
+            $(document).ready(addOn);
+        };
     };
-
-    function handleDropMenu(e) {
-        openedMenu.classList.toggle('opened');
-        dropdownMenu.classList.toggle('opened');
-        addOn();
-    }
-
+/*
     items.forEach(e => {
-        e.addEventListener("click", function(){
+        e.addEventListener("click", function() {
+            console.log("click");
+            console.dir(e);
             handleDropMenu(e);
         })
     });
+*/
+
+    $(document).ready(function() {   
+        function handleDropMenu() {
+            let openedMenu = document.querySelector('#openedMenu');
+            let dropdownMenu = document.querySelector('#dropdownMenu');
+
+            openedMenu.classList.toggle('opened');
+            dropdownMenu.classList.toggle('opened');
+            addOn();
+        }
+
+        $(document).on('click', '#dropdownMenu li > span', handleDropMenu);
+    });
+    
+
+
 
     addOn();
 

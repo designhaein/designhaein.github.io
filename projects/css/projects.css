@@ -15,7 +15,7 @@ Supahscroll
 }
 
 * {
-    font-family: 'Pretendard-Regular';
+    font-family: 'Pretendard', sans-serif;
 }
 body {
     overflow-y: scroll;
@@ -26,7 +26,7 @@ body::-webkit-scrollbar {
 a {
     text-decoration: none;
     color: unset;
-    font-family: 'Pretendard-Regular';
+    font-family: 'Pretendard' sans-serif;
 }
 li, ul {
     padding: 0; margin: 0;

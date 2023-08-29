@@ -1,3 +1,21 @@
+:root {
+    --light-yellow: #f7f6f2;
+    --main-yellow: #fcc41c;
+    --gray-color: #9ea1a4;
+    font-size: 16px;
+    --shadow-01: 0px 0px 2rem rgba(45,45,45,.1);
+}
+
+* {
+    font-family: 'Pretendard', sans-serif !important;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: unset;
+    font-family: 'Pretendard', sans-serif !important;
+}
+
 header {
     
 }
@@ -7,6 +25,7 @@ header {
     height: 50px;
     background-color: rgba(255,255,255,0.5);
     backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     border-bottom: 1px solid #ccc;
     z-index: 9999;
 }
@@ -33,7 +52,7 @@ header {
     cursor: pointer;
 }
 #dropdownMenu li:hover {
-    color: red;
+    color: var(--main-yellow);
 }
 #dropdownMenu li.on {
     display: block;
@@ -50,6 +69,10 @@ header {
     transform: rotate(0deg);
     transform-origin: 8px 10px;
     transition: .3s;
+}
+#dropdownMenu li.on > span {
+    z-index: 3;
+    cursor: pointer;
 }
 .tabArea {
     display: none;
@@ -111,4 +134,8 @@ header {
 }
 .menuArea #openedMenu li a:hover {
     background-color: rgba(255,255,255);
+}
+
+.rightBtnArea .imgWrap a {
+    display: contents;
 }
